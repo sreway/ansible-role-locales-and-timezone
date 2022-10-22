@@ -1,0 +1,9 @@
+---
+- name: Generate locale (Debian)
+  locale_gen:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ locales }}"
+  when: ansible_os_family == "Debian"
+  tags: locale
+...

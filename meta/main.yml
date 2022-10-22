@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  role_name: locale-timezone
+  author: Andrey Oleynik <andrey.oleynik@sreway.com>
+  description: Locales and timezone configuration role
+
+  license: MIT
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+
+  min_ansible_version: 2.8
+
+  galaxy_tags:
+    - locale
+    - locales
+    - timezone
+dependencies: []
+...

@@ -1,0 +1,7 @@
+---
+- include_tasks: locale_debian.yml
+  when: ansible_os_family == "Debian" and locales | length > 0
+  
+- include_tasks: timezone.yml
+  when: timezone is defined
+...
